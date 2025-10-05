@@ -134,3 +134,5 @@ export const {
   signIn,
   signOut,
 } = NextAuth(authOptions);
+
+export const getServerSession = async (..._args) => auth();
