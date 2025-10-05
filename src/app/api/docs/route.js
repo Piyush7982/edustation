@@ -5,7 +5,7 @@ import YAML from "yaml"; // Use 'yaml' instead of 'yamljs'
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), "openapi.yaml");
+    const filePath = path.join(process.cwd(), "public", "docs", "openapi.yaml");
     const fileContent = fs.readFileSync(filePath, "utf8");
     const doc = YAML.parse(fileContent); // parse safely
     return NextResponse.json(doc);

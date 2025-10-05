@@ -34,6 +34,7 @@ export async function middleware(req) {
     "/faq",
     "/privacy",
     "/terms",
+    "/docs",
   ];
   const authRoutes = ["/login", "/signup"];
 
